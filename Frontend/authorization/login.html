@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form action="" id="form">
+        <h3>Sign In to .BLOG</h3>
+        <!-- <label for="">mobile phone number</label> -->
+        <input type="email" placeholder="Email" id="email" />
+        <div style="display: flex; align-items: center; margin-top: 0px;">
+          <input type="checkbox" placeholder="Show Text" onclick="showPass()" />
+          <h5>Show Password</h5>
+        </div>
+        <input type="password" placeholder="Enter Password" id="pass" />
+        <a
+          style="text-align: left; margin-bottom: 20px; margin-top: 10px;"
+          href=""
+          >Forget Your Password?</a
+        >
+        <!-- <p id="para1">Enter Password</p> -->
+        <input type="submit" value="Sign In" id="submit" />
+      </form>
+      <p>
+        By continuing, you agree to our Term & Conditions,our Privacy Policy,
+        and the My Best Buy® Program Terms.
+      </p>
+      <hr />
+      <h4>
+        Don't have an account?<a href="signup.html"
+          >Create an account</a
+        >
+      </h4>
+    </div>
+  </body>
+</html>
+<script src="login.js"></script>

@@ -29,3 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Change the background image every 2 seconds
   setInterval(changeBackgroundImage, 2000);
 });
+
+
+let signinBtn=document.querySelector(".signin-btn")
+let createBlogBtn=document.querySelector(".create-blog-btn")
+
+signinBtn.addEventListener("click",()=>{
+  const token=JSON.parse(localStorage.getItem("blogToken"))
+  if(token){
+    window.location.href="../blogspage/blog.html"
+  }else{
+    window.location.href="../authorization/login.html"
+  }
+})
